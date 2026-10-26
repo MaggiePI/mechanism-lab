@@ -1,12 +1,12 @@
 # Mechanism Lab
 
-An original, standalone experimental workbench for computational decision-making. Inspired by mechanistic neuroscience modelling, **not dependent on Neuroblox or Julia**.
+An original, standalone experimental workbench for computational decision-making. Inspired by mechanistic neuroscience modelling.
 
 ## Features
 
 - Reproducible two-armed bandit with reward reversal.
 - Four competing models: random baseline, Q-learning, prediction-error-adaptive learning, and a leaky competing-trace model.
-- Maximum-likelihood fitting, AIC/BIC model ranking, multi-start optimization.
+- Maximum-likelihood fitting, AIC/BIC model ranking, multi-start optimisation.
 - Synthetic parameter recovery and model-recovery counts.
 - Matched-seed intervention comparisons.
 - Interactive zero-build HTML dashboard with FastAPI backend.
@@ -58,6 +58,6 @@ All agents are **simplified computational models**. The adaptive model is a heur
 - `web/index.html`: browser workbench
 - `tests/test_core.py`: automated tests
 
-## Next research improvements
+## Ideas for next research improvements
 
 Implement held-out predictive evaluation, posterior uncertainty, parameter identifiability maps, genuinely Bayesian change-point learners, and validated spiking neural dynamics. These are deliberately not claimed as implemented.
