@@ -1,0 +1,15 @@
+[project]
+name = "mechanism-lab"
+version = "0.1.0"
+description = "Reproducible computational decision-making experiments and model comparison"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "scipy>=1.10", "fastapi>=0.110", "uvicorn>=0.27"]
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+[project.scripts]
+mechanism-lab = "mechanism_lab.cli:main"
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[tool.setuptools.packages.find]
+include = ["mechanism_lab*"]
